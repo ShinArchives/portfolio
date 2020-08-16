@@ -1,0 +1,47 @@
+    * {
+        font-family: 'Open Sans', sans-serif;
+        color: #1d1d1d;
+        text-align: center;
+        overflow-x: hidden;
+        user-select: none;
+    }
+    
+    header {
+        margin-top: 100px;
+    }
+    
+    header img {
+        filter: invert();
+        width: 200px;
+        margin-top: -40px;
+    }
+    
+    header h1 {
+        font-weight: bolder;
+        letter-spacing: 5px;
+    }
+    
+    header h2 {
+        font-family: 'Open Sans', sans-serif;
+        color: rgb(105, 105, 105);
+        letter-spacing: 2px;
+    }
+    
+    .portfolio {
+        margin: 0 auto 0 auto;
+        width: 90%;
+    }
+    
+    .portfolio img {
+        width: 100%;
+    }
+    
+    .portfolio div {
+        width: 500px;
+        padding: 10px;
+        display: inline-block;
+    }
+    
+    .footer {
+        padding: 100px;
+    }
