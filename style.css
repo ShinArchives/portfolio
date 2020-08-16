@@ -6,6 +6,18 @@
         user-select: none;
     }
     
+    @keyframes warning {
+        0% {
+            opacity: 100%;
+        }
+        50% {
+            opacity: 0%;
+        }
+        100% {
+            opacity: 100%;
+        }
+    }
+    
     header {
         margin-top: 100px;
     }
@@ -44,4 +56,9 @@
     
     .footer {
         padding: 100px;
+    }
+    
+    .warning {
+        animation: warning 5s linear;
+        animation-iteration-count: infinite;
     }
