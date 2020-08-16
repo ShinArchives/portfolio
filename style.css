@@ -66,6 +66,19 @@
         animation-iteration-count: infinite;
     }
     
+    body::-webkit-scrollbar {
+        width: 0.5rem;
+    }
+    
+    body::-webkit-scrollbar-track {
+        background: rgb(179, 179, 179);
+    }
+    
+    body::-webkit-scrollbar-thumb {
+        background-color: #1d1d1d;
+        border-radius: 20px;
+    }
+    
     @media only screen and (max-width: 620px) {
         .portfolio div {
             width: 450px;
