@@ -8,13 +8,16 @@
     
     @keyframes warning {
         0% {
-            opacity: 100%;
-        }
-        50% {
             opacity: 0%;
         }
-        100% {
+        35% {
             opacity: 100%;
+        }
+        65% {
+            opacity: 100%;
+        }
+        100% {
+            opacity: 0%;
         }
     }
     
@@ -61,4 +64,28 @@
     .warning {
         animation: warning 5s linear;
         animation-iteration-count: infinite;
+    }
+    
+    @media only screen and (max-width: 620px) {
+        .portfolio div {
+            width: 450px;
+            padding: 10px;
+            display: inline-block;
+        }
+    }
+    
+    @media only screen and (max-width: 530px) {
+        .portfolio div {
+            width: 400px;
+            padding: 10px;
+            display: inline-block;
+        }
+    }
+    
+    @media only screen and (max-width: 470px) {
+        .portfolio div {
+            width: 350px;
+            padding: 10px;
+            display: inline-block;
+        }
     }
