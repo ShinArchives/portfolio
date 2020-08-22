@@ -1,111 +1,136 @@
-    * {
-        font-family: 'Open Sans', sans-serif;
-        color: #1d1d1d;
-        text-align: center;
-        overflow-x: hidden;
-        user-select: none;
-        padding: 0;
-        margin: 0;
+:root {
+    --color: #141414;
+}
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    text-align: center;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    background-color: var(--color);
+}
+
+@keyframes warning {
+    0% {
+        opacity: 0%;
     }
-    
-    @keyframes warning {
-        0% {
-            opacity: 0%;
-        }
-        45% {
-            opacity: 100%;
-        }
-        65% {
-            opacity: 100%;
-        }
-        100% {
-            opacity: 0%;
-        }
+    45% {
+        opacity: 100%;
     }
-    
-    header {
-        margin-top: 100px;
+    65% {
+        opacity: 100%;
     }
-    
-    header img {
-        filter: invert();
-        width: 200px;
-        margin-top: -40px;
+    100% {
+        opacity: 0%;
     }
-    
-    header h1 {
-        font-weight: bolder;
-        letter-spacing: 5px;
-        padding: 10px;
+}
+
+@keyframes rainbow {
+    from {
+        filter: hue-rotate(0deg);
     }
-    
-    header h2 {
-        font-family: 'Open Sans', sans-serif;
-        color: rgb(105, 105, 105);
-        letter-spacing: 2px;
-        padding: 10px;
+    to {
+        filter: hue-rotate(360deg);
     }
-    
-    h3 {
-        padding: 30px;
-    }
-    
-    .portfolio {
-        margin: 0 auto 0 auto;
-        width: 90%;
-    }
-    
-    .portfolio img {
-        width: 100%;
-    }
-    
+}
+
+header {
+    margin-top: 100px;
+}
+
+header img {
+    width: 200px;
+    margin-top: -40px;
+}
+
+header h1 {
+    font-weight: bolder;
+    letter-spacing: 5px;
+    padding: 10px;
+}
+
+header h2 {
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 3px;
+    padding: 10px;
+}
+
+h3 {
+    padding: 30px;
+}
+
+.portfolio {
+    margin: 0 auto 0 auto;
+    width: 90%;
+}
+
+.portfolio img {
+    width: 100%;
+}
+
+.portfolio div {
+    width: 400px;
+    padding: 10px;
+    display: inline-block;
+}
+
+.contact p {
+    padding-top: 70px;
+    padding-bottom: 30px;
+    font-size: 20px;
+}
+
+.contact span {
+    color: aqua;
+    animation: rainbow 7s linear;
+    font-weight: bolder;
+    animation-iteration-count: infinite;
+}
+
+.footer {
+    margin-top: 50px;
+    padding: 100px;
+    background-color: black;
+}
+
+.footer p {
+    color: white;
+    width: 100%;
+    background-color: black;
+}
+
+.warning {
+    animation: warning 5s linear;
+    animation-iteration-count: infinite;
+}
+
+body::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+
+/* body::-webkit-scrollbar-track {
+        background: rgb(0, 0, 0);
+    } */
+
+body::-webkit-scrollbar-thumb {
+    background-color: #ffffff;
+}
+
+@media only screen and (max-width: 530px) {
     .portfolio div {
         width: 400px;
         padding: 10px;
         display: inline-block;
     }
-    
-    .footer {
-        margin-top: 50px;
-        padding: 100px;
-        background-color: black;
+}
+
+@media only screen and (max-width: 470px) {
+    .portfolio div {
+        width: 300px;
+        padding: 10px;
+        display: inline-block;
     }
-    
-    .footer p {
-        color: white;
-        width: 100%;
-    }
-    
-    .warning {
-        animation: warning 5s linear;
-        animation-iteration-count: infinite;
-    }
-    
-    body::-webkit-scrollbar {
-        width: 0.5rem;
-    }
-    
-    body::-webkit-scrollbar-track {
-        background: rgb(179, 179, 179);
-    }
-    
-    body::-webkit-scrollbar-thumb {
-        background-color: #1d1d1d;
-        border-radius: 20px;
-    }
-    
-    @media only screen and (max-width: 530px) {
-        .portfolio div {
-            width: 400px;
-            padding: 10px;
-            display: inline-block;
-        }
-    }
-    
-    @media only screen and (max-width: 470px) {
-        .portfolio div {
-            width: 300px;
-            padding: 10px;
-            display: inline-block;
-        }
-    }
+}
