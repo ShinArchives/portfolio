@@ -74,6 +74,14 @@ h3 {
     padding: 30px;
 }
 
+.warning {
+    animation: warning 5s linear;
+    animation-iteration-count: infinite;
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
 .portfolio {
     margin: 0 auto 0 auto;
     width: 90%;
@@ -87,6 +95,12 @@ h3 {
     width: 400px;
     padding: 10px;
     display: inline-block;
+}
+
+.contact {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
 }
 
 .contact p {
@@ -139,11 +153,6 @@ h3 {
 .backToTop a {
     text-decoration: none;
     color: white;
-}
-
-.warning {
-    animation: warning 5s linear;
-    animation-iteration-count: infinite;
 }
 
 body::-webkit-scrollbar {
