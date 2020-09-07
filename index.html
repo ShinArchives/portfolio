@@ -14,9 +14,9 @@
     <!-- <meta name="description" content="Motion Designer Portfolio | Shahin164"> -->
 
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Portfolio"/>
-    <meta property="og:description" content="Motion Designer Portfolio | Shahin164"/>
-    <meta property="og:url" content="https://www.retards.online"/>
+    <meta property="og:title" content="Portfolio" />
+    <meta property="og:description" content="Motion Designer Portfolio | Shahin164" />
+    <meta property="og:url" content="https://www.retards.online" />
     <meta property="og:image" content="./logo.png" />
 </head>
 
@@ -73,7 +73,7 @@
 </section>
 
 <section class="contact">
-    <p>To order a design, contact me on discord: <span>Shahin164#8778</span></p>
+    <p>To order a design, contact me on discord: <a id="copy"><span id="stuff" onmouseover="change()" onmouseout="changeback()">Shahin164#8778</span></a></p>
 </section>
 
 <section class="footer ">
@@ -82,10 +82,45 @@
 </section>
 
 <script>
+    function change() {
+        var creds = document.getElementById("stuff");
+        creds.innerHTML = 'Click me to copy';
+    }
+
+    function changeback() {
+        var creds = document.getElementById("stuff");
+        creds.innerHTML = 'Shahin164#8778';
+    }
+
+
     function topFunction() {
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
     }
+
+    function copyToClipboard(text) {
+        if (window.clipboardData && window.clipboardData.setData) {
+            return clipboardData.setData("Text", text);
+        } else if (document.queryCommandSupported && document.queryCommandSupported("copy")) {
+            var textarea = document.createElement("textarea");
+            textarea.textContent = text;
+            textarea.style.position = "fixed"; // Prevent scrolling to bottom of page in MS Edge.
+            document.body.appendChild(textarea);
+            textarea.select();
+            try {
+                return document.execCommand("copy");
+            } catch (ex) {
+                console.warn("Copy to clipboard failed.", ex);
+                return false;
+            } finally {
+                document.body.removeChild(textarea);
+            }
+        }
+    }
+    document.querySelector("#copy").onclick = function() {
+        var result = copyToClipboard('Shahin164#8778');
+        console.log("Copied to clipboard:", result);
+    };
 </script>
 
 </html>
