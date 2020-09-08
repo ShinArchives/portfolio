@@ -2,6 +2,8 @@ const darkButton = document.getElementById('dark');
 const lightButton = document.getElementById('light');
 
 const body = document.body;
+
+const darkEnabled = document.getElementById('darkEnabled');
 const theme = localStorage.getItem('theme');
 
 const button = document.getElementById('backToTop');
@@ -11,7 +13,7 @@ if (theme) {
     body.classList.add(theme);
 }
 
-if (theme == 'dark') {
+if (darkEnabled) {
     logo.classList.add('rev');
     darkButton.classList.replace('theme-changer-light', 'theme-changer-dark');
     lightButton.classList.replace('theme-changer-light', 'theme-changer-dark');
