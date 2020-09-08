@@ -42,5 +42,3 @@ lightButton.onclick = () => {
     localStorage.setItem('theme', 'light');
     console.log(`Theme set to light.`);
 };
-
-console.log('Themechanger.js loaded.');
