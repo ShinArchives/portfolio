@@ -23,6 +23,7 @@ function copyToClipboard(text) {
         document.body.appendChild(textarea);
         textarea.select();
         try {
+            alert(`"Shahin164#8778" copied to clipboard.`);
             return document.execCommand("copy");
         } catch (ex) {
             console.warn("Copy to clipboard failed.", ex);
