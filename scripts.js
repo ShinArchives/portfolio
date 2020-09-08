@@ -8,7 +8,6 @@ function changeback() {
     creds.innerHTML = 'Shahin164#8778';
 }
 
-
 function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
@@ -33,6 +32,7 @@ function copyToClipboard(text) {
         }
     }
 }
+
 document.querySelector("#copy").onclick = function() {
     var result = copyToClipboard('Shahin164#8778');
     console.log("Copied to clipboard:", result);
