@@ -21,7 +21,7 @@ if (theme === 'light') {
     darkButton.classList.add('theme-changer-light');
 
     localStorage.setItem('theme', 'light');
-    console.log(`Theme sfwafwafwafwafwaet to light.`);  
+    console.log(`Theme set to light.`);
 } else {
     body.classList.replace('light', 'dark');
     logo.classList.add('rev');
@@ -30,7 +30,7 @@ if (theme === 'light') {
     lightButton.classList.add('theme-changer-dark');
 
     localStorage.setItem('theme', 'dark');
-    console.log(`Theme set to dark.`); 
+    console.log(`Theme set to dark.`);
 }
 
 darkButton.onclick = () => {
