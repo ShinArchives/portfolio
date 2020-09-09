@@ -9,10 +9,10 @@ const theme = localStorage.getItem('theme');
 const button = document.getElementById('backToTop');
 const logo = document.getElementById('logo');
 
+localStorage.setItem('dark');
+
 if (theme) {
     body.classList.add(theme);
-} else {
-    localStorage.setItem('theme', 'dark');
 }
 
 if (theme === 'dark') {
