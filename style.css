@@ -69,7 +69,7 @@
 body {
     color: var(--text);
     background: var(--bg);
-    transition: background 500ms ease-in-out, color 1000ms ease-in-out;
+    transition: background 500ms ease-in-out, color 500ms ease-in-out;
 }
 
 .dark {

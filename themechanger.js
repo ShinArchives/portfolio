@@ -13,7 +13,7 @@ if (theme) {
     body.classList.add(theme);
 }
 
-if (darkEnabled) {
+if (theme === 'dark') {
     logo.classList.add('rev');
     darkButton.classList.replace('theme-changer-light', 'theme-changer-dark');
     lightButton.classList.replace('theme-changer-light', 'theme-changer-dark');
