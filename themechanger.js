@@ -13,10 +13,8 @@ if (theme) {
     body.classList.add(theme);
 }
 
-let darkOn = true;
-
-if (darkOn) {
-    body.classList.add('dark');
+if (theme === 'dark') {
+    body.classList.replace('light', 'dark');
     logo.classList.add('rev');
     button.classList.add('btn-dark');
     darkButton.classList.add('theme-changer-dark');
@@ -25,7 +23,7 @@ if (darkOn) {
     localStorage.setItem('theme', 'dark');
     console.log(`Theme set to dark.`);    
 } else {
-    body.classList.add('light');
+    body.classList.replace('dark', 'light');
     logo.classList.add('inv');
     button.classList.add('btn-light');
     lightButton.classList.add('theme-changer-light');
