@@ -9,22 +9,11 @@ const theme = localStorage.getItem('theme');
 const button = document.getElementById('backToTop');
 const logo = document.getElementById('logo');
 
-localStorage.setItem('theme', 'dark');
-
 if (theme) {
     body.classList.add(theme);
 }
 
-if (theme === 'dark') {
-    body.classList.replace('light', 'dark');
-    logo.classList.add('rev');
-    button.classList.add('btn-dark');
-    darkButton.classList.add('theme-changer-dark');
-    lightButton.classList.add('theme-changer-dark');
-
-    localStorage.setItem('theme', 'dark');
-    console.log(`Theme set to dark.`);    
-} else {
+if (theme === 'light') {
     body.classList.replace('dark', 'light');
     logo.classList.add('inv');
     button.classList.add('btn-light');
@@ -32,7 +21,16 @@ if (theme === 'dark') {
     darkButton.classList.add('theme-changer-light');
 
     localStorage.setItem('theme', 'light');
-    console.log(`Theme set to light.`);  
+    console.log(`Theme sfwafwafwafwafwaet to light.`);  
+} else {
+    body.classList.replace('light', 'dark');
+    logo.classList.add('rev');
+    button.classList.add('btn-dark');
+    darkButton.classList.add('theme-changer-dark');
+    lightButton.classList.add('theme-changer-dark');
+
+    localStorage.setItem('theme', 'dark');
+    console.log(`Theme set to dark.`); 
 }
 
 darkButton.onclick = () => {
