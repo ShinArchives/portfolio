@@ -11,6 +11,8 @@ const logo = document.getElementById('logo');
 
 if (theme) {
     body.classList.add(theme);
+} else if (!theme){
+    body.classList.add('dark');
 }
 
 if (theme === 'dark') {
