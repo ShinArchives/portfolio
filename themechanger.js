@@ -12,7 +12,7 @@ const logo = document.getElementById('logo');
 if (theme) {
     body.classList.add(theme);
 } else {
-    body.classList.add('dark');
+    localStorage.setItem('theme', 'dark');
 }
 
 if (theme === 'dark') {
