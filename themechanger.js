@@ -22,7 +22,7 @@ if (theme === 'dark') {
 
     localStorage.setItem('theme', 'dark');
     console.log(`Theme set to dark.`);    
-} else if (theme === 'light') {
+} else {
     body.classList.replace('dark', 'light');
     logo.classList.add('inv');
     button.classList.add('btn-light');
