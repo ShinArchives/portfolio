@@ -13,7 +13,9 @@ if (theme) {
     body.classList.add(theme);
 }
 
-if (theme === 'dark') {
+let darkOn = true;
+
+if (darkOn) {
     body.classList.add('dark');
     logo.classList.add('rev');
     button.classList.add('btn-dark');
