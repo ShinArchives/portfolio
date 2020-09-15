@@ -202,6 +202,7 @@ h3 {
 
 .portfolio img {
     width: 100%;
+    transition: all 1s ease;
 }
 
 .portfolio div {
@@ -210,8 +211,13 @@ h3 {
     display: inline-block;
 }
 
+.portfolio img:hover {
+    transform: scale(1.04);
+}
+
 .portfolio div:hover p {
     opacity: 1;
+    font-weight: 400;
 }
 
 .portfolio div p {
@@ -310,6 +316,9 @@ body::-webkit-scrollbar-thumb {
 @media only screen and (max-width: 530px) {
     .portfolio div p {
         opacity: 1;
+    }
+    .portfolio img:hover {
+        transform: scale(1);
     }
 }
 
