@@ -218,10 +218,11 @@ h3 {
 .portfolio div:hover p {
     opacity: 1;
     font-weight: 400;
+    transform: translateY(10px);
 }
 
 .portfolio div p {
-    transition: all 0.5s ease;
+    transition: all 0.8s ease;
     opacity: 0;
 }
 
