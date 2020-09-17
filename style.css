@@ -314,7 +314,7 @@ body::-webkit-scrollbar-thumb {
     background-color: #ffffff;
 }
 
-@media only screen and (max-width: 530px) {
+@media only screen and (max-width: 1024px) {
     .portfolio div p {
         opacity: 1;
     }
