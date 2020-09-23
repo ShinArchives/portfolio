@@ -338,6 +338,12 @@ body::-webkit-scrollbar-thumb {
     .theme-changer-dark {
         font-size: 13px;
     }
+    header h2 {
+        font-size: 20px;
+    }
+    h3 {
+        font-size: 14px;
+    }
 }
 
 @media only screen and (max-width: 470px) {
