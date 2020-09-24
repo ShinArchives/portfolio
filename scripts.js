@@ -1,6 +1,6 @@
 function change() {
     var creds = document.getElementById("stuff");
-    creds.innerHTML = 'Click me to copy';
+    creds.textContent = 'Click me to copy';
 }
 
 function changeback() {
