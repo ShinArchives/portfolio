@@ -246,6 +246,15 @@ h3 {
     padding: 30px;
 }
 
+.button-holder a {
+    transition: all 0.3s ease;
+    opacity: 50%;
+}
+
+.button-holder a:hover {
+    opacity: 100%;
+}
+
 .btn-light {
     text-decoration: none;
     display: block;
@@ -305,6 +314,9 @@ body::-webkit-scrollbar-thumb {
         opacity: 1;
         font-weight: 400;
         transform: translateY(0px);
+    }
+    .button-holder a {
+        opacity: 100%;
     }
 }
 
