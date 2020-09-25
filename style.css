@@ -22,7 +22,8 @@
     }
 }
 
-@keyframes darkpulse {
+
+/* @keyframes darkpulse {
     0% {
         -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.6);
     }
@@ -44,7 +45,7 @@
     100% {
         -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
     }
-}
+} */
 
 @keyframes slide {
     0% {
@@ -263,6 +264,13 @@ h3 {
     background-color: var(--footer-color);
 }
 
+.button-holder {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 30px;
+}
+
 .btn-light {
     text-decoration: none;
     display: block;
@@ -274,14 +282,14 @@ h3 {
     font-size: 20px;
     text-align: center;
     padding: 10px;
-    width: 80px;
+    width: 60;
     transition-property: filter, opacity, transform;
     transition-duration: 0.3s, 1s, 1s;
     transition-timing-function: ease;
     animation: lightpulse 2s ease;
     animation-iteration-count: infinite;
     color: black;
-    background-color: #e7e7e7;
+    background-color: transparent;
     border: 1px solid black;
 }
 
@@ -296,14 +304,14 @@ h3 {
     font-size: 20px;
     text-align: center;
     padding: 10px;
-    width: 80px;
+    width: 60px;
     transition-property: filter, opacity, transform;
     transition-duration: 0.3s, 1s, 1s;
     transition-timing-function: ease;
     animation: darkpulse 2s ease;
     animation-iteration-count: infinite;
     color: white;
-    background-color: black;
+    background-color: transparent;
     border: 1px solid white;
 }
 
