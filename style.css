@@ -204,6 +204,7 @@ h3 {
     width: 300px;
     padding: 10px;
     display: inline-block;
+    transition: all .5s ease;
 }
 
 .portfolio div:hover video {
@@ -370,7 +371,7 @@ body::-webkit-scrollbar-thumb {
     }
 }
 
-@media only screen and (max-width: 532px) {
+@media only screen and (max-width: 540px) {
     .portfolio div {
         width: 400px;
     }
