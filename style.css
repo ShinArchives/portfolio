@@ -195,7 +195,7 @@ h3 {
     animation: slide ease-out 2s;
 }
 
-.portfolio img {
+.portfolio video {
     width: 100%;
     transition: all 1s ease;
 }
@@ -206,7 +206,7 @@ h3 {
     display: inline-block;
 }
 
-.portfolio div:hover img {
+.portfolio div:hover video {
     transform: scale(1.04);
 }
 
