@@ -346,7 +346,7 @@ body::-webkit-scrollbar-thumb {
     .portfolio div p {
         opacity: 1;
     }
-    .portfolio div:hover img {
+    .portfolio div:hover video {
         transform: scale(1);
     }
     .portfolio div:hover p {
