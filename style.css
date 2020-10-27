@@ -153,8 +153,7 @@ header {
 }
 
 header img {
-    width: 200px;
-    margin-top: -40px;
+    width: 175px;
     filter: invert();
 }
 
@@ -412,7 +411,7 @@ body::-webkit-scrollbar-thumb {
     }
 }
 
-@media only screen and (max-width: 372px) {
+@media only screen and (max-width: 380px) {
     #uarrow {
         width: 130px;
         left: 40px;
