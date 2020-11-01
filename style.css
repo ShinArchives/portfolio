@@ -266,7 +266,7 @@ h3 {
 }
 
 .footer {
-    margin-top: 50px;
+    margin-top: 100px;
     padding: 100px;
     color: var(--text);
     background-color: var(--footer-color);
