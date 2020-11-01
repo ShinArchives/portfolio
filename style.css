@@ -1,13 +1,17 @@
-@keyframes warning {
+
+  @keyframes warning {
     0% {
         opacity: 0%;
     }
+
     45% {
         opacity: 100%;
     }
+
     65% {
         opacity: 100%;
     }
+
     100% {
         opacity: 0%;
     }
@@ -17,19 +21,9 @@
     from {
         filter: hue-rotate(0deg);
     }
+
     to {
         filter: hue-rotate(360deg);
-    }
-}
-
-@keyframes slide {
-    0% {
-        transform: translateY(5%);
-        opacity: 0%;
-    }
-    100% {
-        transform: translateY(0%);
-        opacity: 100%;
     }
 }
 
@@ -37,9 +31,11 @@
     0% {
         transform: translateY(0%);
     }
+
     50% {
         transform: translateY(-10%);
     }
+
     100% {
         transform: translateY(0%);
     }
@@ -158,6 +154,8 @@ header img {
 }
 
 header h1 {
+    transition: all .2s ease;
+    font-size: 50px;
     font-weight: bolder;
     letter-spacing: 5px;
     padding: 10px;
@@ -167,6 +165,8 @@ header h1 {
 }
 
 header h2 {
+    transition: all .2s ease;
+    font-size: 25px;
     font-family: 'Open Sans', sans-serif;
     letter-spacing: 3px;
     padding: 10px;
@@ -177,6 +177,7 @@ header h2 {
 
 h3 {
     padding: 30px;
+    font-size: 15px;
 }
 
 .warning {
@@ -188,37 +189,83 @@ h3 {
     padding-bottom: 50px;
 }
 
-.portfolio {
+/* Gif Portfolio */
+
+.ml13 {
+    width: 95%;
+    letter-spacing: 5px;
+    font-size: 30px;
+    overflow: hidden;
+    margin: 30px 0 20px 0; 
+  }
+  
+  .ml13 .letter {
+    display: inline-block;
+  }
+
+.portfolio-gifs {
     margin: 0 auto 0 auto;
     width: 95%;
-    animation: slide ease-out 2s;
 }
 
-.portfolio video {
+.portfolio-gifs video {
     width: 100%;
     transition: all 1s ease;
 }
 
-.portfolio div {
+.portfolio-gifs div {
     width: 300px;
     padding: 10px;
     display: inline-block;
-    transition: all .5s ease;
 }
 
-.portfolio div:hover video {
+.portfolio-gifs div:hover video {
     transform: scale(1.04);
 }
 
-.portfolio div:hover p {
+.portfolio-gifs div:hover p {
     opacity: 1;
     font-weight: 400;
     transform: translateY(10px);
 }
 
-.portfolio div p {
+.portfolio-gifs div p {
     transition: all 0.8s ease;
     opacity: 0;
+}
+
+/* Video Portfolio */
+
+.ml9 {
+    position: relative;
+overflow: hidden;
+font-size: 30px;
+letter-spacing: 5px;
+  }
+  
+  .ml9 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+  }
+  
+  .ml9 .letter {
+    transform-origin: 50% 100%;
+    display: inline-block;
+  }
+
+.portfolio-videos {
+    width: 95%;
+    display: block;
+    margin: 0 auto;
+}
+
+.portfolio-videos iframe {
+    display: inline-block;
+    padding: 10px;
 }
 
 .contact {
@@ -343,17 +390,20 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media only screen and (max-width: 1300px) {
-    .portfolio div p {
+    .portfolio-gifs div p {
         opacity: 1;
     }
-    .portfolio div:hover video {
+
+    .portfolio-gifs div:hover video {
         transform: scale(1);
     }
-    .portfolio div:hover p {
+
+    .portfolio-gifs div:hover p {
         opacity: 1;
         font-weight: 400;
         transform: translateY(0px);
     }
+
     .button-holder a {
         opacity: 100%;
     }
@@ -364,6 +414,7 @@ body::-webkit-scrollbar-thumb {
         width: 130px;
         left: 190px;
     }
+
     #contact-thing {
         font-size: 20px;
         width: 100%;
@@ -371,27 +422,43 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media only screen and (max-width: 540px) {
-    .portfolio div {
+    .portfolio-gifs div {
         width: 400px;
     }
+
     .theme-changer-light {
         font-size: 13px;
     }
+
     .theme-changer-dark {
         font-size: 13px;
     }
+
+    header h1 {
+        font-size: 40px;
+    }
+
     header h2 {
         font-size: 20px;
     }
+
     h3 {
         font-size: 14px;
     }
+
     .contact {
         height: 170px;
     }
+
+    iframe {
+        width: 400px;
+        height: 220px;
+    }
+
     #darrow {
         display: none;
     }
+
     #uarrow {
         display: inline;
         top: 130px;
@@ -399,19 +466,40 @@ body::-webkit-scrollbar-thumb {
     }
 }
 
+
 @media only screen and (max-width: 472px) {
-    .portfolio div {
+    .portfolio-gifs div {
         width: 300px;
     }
+
     .theme-changer-light {
         font-size: 10px;
     }
+
     .theme-changer-dark {
         font-size: 10px;
     }
+
+    iframe {
+        width: 360px;
+        height: 205px;
+    }
 }
 
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 400px) {
+    iframe {
+        width: 340px;
+        height: 190px;
+    }
+}
+
+
+@media only screen and (max-width: 372px) {
+    iframe {
+        width: 300px;
+        height: 170px;
+    }
+
     #uarrow {
         width: 130px;
         left: 40px;
