@@ -1,16 +1,12 @@
-function change() {
-    var creds = document.getElementById("stuff");
-    creds.textContent = 'Click me to copy';
-}
-
-function changeback() {
-    var creds = document.getElementById("stuff");
-    creds.innerHTML = 'Shahin164#8778';
-}
-
 function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
+}
+
+function myFunction() {
+    var x = document.getElementById("snackbar");
+    x.className = "show";
+    setTimeout(function () { x.className = x.className.replace("show", ""); }, 2900);
 }
 
 function copyToClipboard(text) {
@@ -23,7 +19,7 @@ function copyToClipboard(text) {
         document.body.appendChild(textarea);
         textarea.select();
         try {
-            alert(`"Shahin164#8778" copied to clipboard.`);
+            myFunction();
             return document.execCommand("copy");
         } catch (ex) {
             console.warn("Copy to clipboard failed.", ex);
@@ -34,7 +30,7 @@ function copyToClipboard(text) {
     }
 }
 
-document.querySelector("#copy").onclick = function() {
+document.querySelector("#copy").onclick = function () {
     var result = copyToClipboard('Shahin164#8778');
     console.log("Copied to clipboard:", result);
 };
