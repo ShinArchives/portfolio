@@ -6,7 +6,9 @@ function topFunction() {
 function myFunction() {
     var x = document.getElementById("snackbar");
     x.className = "show";
-    setTimeout(function () { x.className = x.className.replace("show", ""); }, 2900);
+    setTimeout(function () {
+        x.className = x.className.replace("show", "");
+    }, 2900);
 }
 
 function copyToClipboard(text) {
@@ -31,6 +33,6 @@ function copyToClipboard(text) {
 }
 
 document.querySelector("#copy").onclick = function () {
-    var result = copyToClipboard('Shahin164#8778');
+    var result = copyToClipboard('Shinbone#8778');
     console.log("Copied to clipboard:", result);
 };
