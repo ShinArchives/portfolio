@@ -33,6 +33,6 @@ function copyToClipboard(text) {
 }
 
 document.querySelector("#copy").onclick = function () {
-    var result = copyToClipboard('shincode#8778');
+    var result = copyToClipboard('Shincode#8778');
     console.log("Copied to clipboard:", result);
 };
